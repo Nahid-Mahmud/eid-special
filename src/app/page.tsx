@@ -1,3 +1,4 @@
+import AnimatedText from "./components/AnimatedText";
 import AnimateStars from "./components/AnimateStars";
 
 export default function HomePage() {
@@ -5,6 +6,7 @@ export default function HomePage() {
     <div className="relative min-h-screen bg-black overflow-hidden">
       {/* <AnimatedBackground /> */}
       <AnimateStars />
+      <AnimatedText />
     </div>
   );
 }
