@@ -1,10 +1,10 @@
-import React from "react";
-import AnimatedBackground from "./components/AnimatedBackground";
+import AnimateStars from "./components/AnimateStars";
 
 export default function HomePage() {
   return (
     <div className="relative min-h-screen bg-black">
-      <AnimatedBackground />
+      {/* <AnimatedBackground /> */}
+      <AnimateStars />
     </div>
   );
 }
