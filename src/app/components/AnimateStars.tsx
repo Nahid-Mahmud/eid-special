@@ -22,7 +22,7 @@ export default function AnimateStars() {
     generateStars();
   }, []);
   return (
-    <div className="overflow-x-hidden overflow-y-hidden ">
+    <div>
       {stars.map((star) => (
         <motion.div
           key={star.id}
