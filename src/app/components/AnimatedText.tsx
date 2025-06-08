@@ -3,17 +3,18 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function AnimatedText() {
-  const text = ["Eid", "Mubarak"];
+  const text = ["Eid", "Mubarak", "🌙"];
+
   return (
     <div>
       <div className="flex justify-center items-center h-screen ">
-        <motion.h1 className="md:text-7xl text-6xl font-bold text-white flex gap-5 cursor-pointer">
+        <motion.p className="md:text-7xl text-6xl font-bold text-white flex gap-5 cursor-pointer">
           {text.map((word, index) => (
             <motion.span
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2, type: "spring" }}
-              whileHover={{ scale: 1.1, color: "green", textShadow: "0px 0px 8px rgba(0, 255, 0, 0.5)" }}
+              //   whileHover={{ scale: 1.1, color: "green", textShadow: "0px 0px 8px rgba(0, 255, 0, 0.5)" }}
               whileTap={{ scale: 0.9 }}
               key={index}
               className="block"
@@ -21,7 +22,7 @@ export default function AnimatedText() {
               {word}
             </motion.span>
           ))}
-        </motion.h1>
+        </motion.p>
       </div>
     </div>
   );
