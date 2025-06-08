@@ -1,5 +1,6 @@
 import AnimatedText from "./components/AnimatedText";
 import AnimateStars from "./components/AnimateStars";
+import Moon from "./components/Moon";
 
 export default function HomePage() {
   return (
@@ -7,6 +8,7 @@ export default function HomePage() {
       {/* <AnimatedBackground /> */}
       <AnimateStars />
       <AnimatedText />
+      <Moon />
     </div>
   );
 }
