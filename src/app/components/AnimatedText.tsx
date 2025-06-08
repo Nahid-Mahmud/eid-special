@@ -8,7 +8,7 @@ export default function AnimatedText() {
   return (
     <div>
       <div className="flex justify-center items-center h-screen ">
-        <motion.p className="md:text-7xl text-6xl font-bold text-white flex gap-5 cursor-pointer">
+        <motion.p className="md:text-7xl text-3xl font-bold text-white flex gap-5 cursor-pointer">
           {text.map((word, index) => (
             <motion.span
               initial={{ opacity: 0, y: -20 }}
